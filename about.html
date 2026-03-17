@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Safaraj Digital Services</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; 
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); 
+            min-height: 100vh; padding: 20px; 
+        }
+        nav { background: rgba(255,255,255,0.2); backdrop-filter: blur(20px); padding: 15px 0; margin-bottom: 40px; border-radius: 20px; }
+        .nav-container { max-width: 1200px; margin: 0 auto; display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; }
+        .nav-link { color: white; text-decoration: none; padding: 12px 24px; border-radius: 25px; background: rgba(255,255,255,0.2); transition: all 0.3s; font-weight: 500; }
+        .nav-link:hover { background: rgba(255,255,255,0.4); transform: translateY(-2px); }
+        .container { 
+            background: rgba(255, 255, 255, 0.25); 
+            backdrop-filter: blur(20px); 
+            border-radius: 30px; 
+            border: 1px solid rgba(255, 255, 255, 0.18); 
+            padding: 40px; 
+            max-width: 900px; 
+            margin: 0 auto 40px; 
+            box-shadow: 0 25px 45px rgba(0,0,0,0.1); 
+        }
+        .header { text-align: center; margin-bottom: 40px; }
+        .title { font-size: 2.2rem; font-weight: 700; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 10px; }
+        .subtitle { font-size: 1.2rem; color: rgba(255,255,255,0.9); }
+        .about-content { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-bottom: 40px; }
+        .about-section { background: rgba(255,255,255,0.2); padding: 30px; border-radius: 20px; }
+        .about-icon { font-size: 3rem; margin-bottom: 20px; text-align: center; display: block; }
+        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 20px; margin: 30px 0; }
+        .stat-card { background: rgba(255,255,255,0.3); padding: 25px; border-radius: 20px; text-align: center; }
+        .stat-number { font-size: 2.5rem; font-weight: bold; color: #667eea; }
+        .stat-label { color: #555; margin-top: 5px; }
+        .cta-btn { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 18px 40px; border: none; border-radius: 25px; font-size: 1.1rem; cursor: pointer; display: block; margin: 40px auto 0; transition: all 0.3s; text-decoration: none; }
+        .cta-btn:hover { transform: translateY(-3px); box-shadow: 0 15px 35px rgba(102,126,234,0.4); }
+        footer { text-align: center; color: rgba(255,255,255,0.9); padding: 20px; }
+        @media (max-width: 768px) { 
+            .about-content { grid-template-columns: 1fr; } 
+            .container { padding: 30px 20px; } 
+            .title { font-size: 1.8rem; } 
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link" style="background: rgba(255,255,255,0.3);">About</a>
+            <a href="services.html" class="nav-link">Services</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+            <a href="gallery.html" class="nav-link">Gallery</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="header">
+            <h1 class="title">About Us</h1>
+            <div class="subtitle">Safaraj Digital Services के बारे में जानें</div>
+        </div>
+
+        <div class="about-content">
+            <div class="about-section">
+                <span class="about-icon">🚀</span>
+                <h3>Our Story</h3>
+                <p>2018 से Berhampore में digital services दे रहे हैं। Local businesses को digital world में establish करने में specialist। 100+ happy clients।</p>
+                <p><strong>Jaipur Kalna, West Bengal</strong> से आपके business growth के लिए committed।</p>
+            </div>
+            <div class="about-section">
+                <span class="about-icon">⭐</span>
+                <h3>Why Choose Us</h3>
+                <p>Affordable prices, fast delivery, 24/7 support। Modern technology + local market understanding = perfect combination।</p>
+                <ul style="color: #555; padding-left: 20px; margin-top: 15px;">
+                    <li>✅ 5+ years experience</li>
+                    <li>✅ 100% satisfaction</li>
+                    <li>✅ Local Berhampore team</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number">100+</div>
+                <div class="stat-label">Happy Clients</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">50+</div>
+                <div class="stat-label">Projects Done</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">5+</div>
+                <div class="stat-label">Years Experience</div>
+            </div>
+        </div>
+
+        <a href="contact.html" class="cta-btn">Start Your Project</a>
+    </div>
+
+    <footer>
+        <p>© 2026 Safaraj Digital Services | Jaipur Kalna, Berhampore, West Bengal</p>
+    </footer>
+</body>
+</html>

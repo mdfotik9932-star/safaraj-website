@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Safaraj Digital Services</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; 
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); 
+            min-height: 100vh; padding: 20px; 
+        }
+        nav { background: rgba(255,255,255,0.2); backdrop-filter: blur(20px); padding: 15px 0; margin-bottom: 40px; border-radius: 20px; }
+        .nav-container { max-width: 1200px; margin: 0 auto; display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; }
+        .nav-link { color: white; text-decoration: none; padding: 12px 24px; border-radius: 25px; background: rgba(255,255,255,0.2); transition: all 0.3s; font-weight: 500; }
+        .nav-link:hover { background: rgba(255,255,255,0.4); transform: translateY(-2px); }
+        .container { 
+            background: rgba(255, 255, 255, 0.25); 
+            backdrop-filter: blur(20px); 
+            border-radius: 30px; 
+            border: 1px solid rgba(255, 255, 255, 0.18); 
+            padding: 40px; 
+            max-width: 900px; 
+            margin: 0 auto 40px; 
+            box-shadow: 0 25px 45px rgba(0,0,0,0.1); 
+        }
+        .header { text-align: center; margin-bottom: 40px; }
+        .title { font-size: 2.2rem; font-weight: 700; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 10px; }
+        .subtitle { font-size: 1.2rem; color: rgba(255,255,255,0.9); }
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; }
+        .service-card { 
+            background: rgba(255, 255, 255, 0.3); 
+            padding: 30px; 
+            border-radius: 20px; 
+            text-align: center; 
+            transition: all 0.3s ease; 
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+        .service-card:hover { transform: translateY(-5px); background: rgba(255,255,255,0.4); }
+        .service-icon { font-size: 3.5rem; margin-bottom: 20px; display: block; }
+        .service-card h3 { font-size: 1.5rem; margin-bottom: 15px; color: #333; }
+        .service-card p { color: #555; line-height: 1.6; }
+        .price { font-size: 1.3rem; font-weight: bold; color: #667eea; margin-top: 15px; }
+        .cta-btn { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 18px 40px; border: none; border-radius: 25px; font-size: 1.1rem; cursor: pointer; display: block; margin: 40px auto 0; transition: all 0.3s; text-decoration: none; }
+        .cta-btn:hover { transform: translateY(-3px); box-shadow: 0 15px 35px rgba(102,126,234,0.4); }
+        footer { text-align: center; color: rgba(255,255,255,0.9); padding: 20px; }
+        @media (max-width: 768px) { .container { padding: 30px 20px; } .title { font-size: 1.8rem; } }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="services.html" class="nav-link" style="background: rgba(255,255,255,0.3);">Services</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+            <a href="gallery.html" class="nav-link">Gallery</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="header">
+            <h1 class="title">Our Services</h1>
+            <div class="subtitle">Safaraj Digital Services की सभी सेवाएं एक जगह</div>
+        </div>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <span class="service-icon">🌐</span>
+                <h3>Website Design</h3>
+                <p>Professional responsive websites आपके business के लिए। Modern design + Fast loading।</p>
+                <div class="price">Starting ₹15,000</div>
+            </div>
+            
+            <div class="service-card">
+                <span class="service-icon">📱</span>
+                <h3>Digital Marketing</h3>
+                <p>Facebook, Instagram, Google Ads + SEO। Guaranteed results आपके business growth के लिए।</p>
+                <div class="price">Starting ₹8,000/month</div>
+            </div>
+            
+            <div class="service-card">
+                <span class="service-icon">🎨</span>
+                <h3>Graphic Design</h3>
+                <p>Logo, banner, poster, social media graphics। Professional quality कम price में।</p>
+                <div class="price">Starting ₹2,000</div>
+            </div>
+            
+            <div class="service-card">
+                <span class="service-icon">📸</span>
+                <h3>Photo/Video Editing</h3>
+                <p>Product photos, wedding editing, reels, YouTube thumbnails। Fast delivery।</p>
+                <div class="price">Starting ₹500</div>
+            </div>
+        </div>
+
+        <a href="contact.html" class="cta-btn">Get Quote Now</a>
+    </div>
+
+    <footer>
+        <p>© 2026 Safaraj Digital Services | Jaipur Kalna, Berhampore, West Bengal</p>
+    </footer>
+</body>
+</html>
